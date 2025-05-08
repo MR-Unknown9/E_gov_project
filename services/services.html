@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Government Services Portal</title>
+    <link rel="stylesheet" href="home/styles.css" />
+    <link rel="stylesheet" href="services/services.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>GovServices</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html" class="login-btn">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="services-container">
+      <h1>Available Services</h1>
+
+      <div class="services-grid">
+        <!-- ID Card Service -->
+        <div class="service-card" id="id-card">
+          <div class="service-icon">
+            <i class="fas fa-id-card"></i>
+          </div>
+          <div class="service-content">
+            <h2>Government ID Card</h2>
+            <p>
+              Apply for or renew your government-issued identification card.
+            </p>
+            <div class="service-details">
+              <h3>Required Documents:</h3>
+              <ul>
+                <li>Birth Certificate</li>
+                <li>Proof of Address</li>
+                <li>Recent Passport Photo</li>
+              </ul>
+              <h3>Processing Time:</h3>
+              <p>5-7 business days</p>
+              <h3>Cost:</h3>
+              <p>$25.00</p>
+            </div>
+            <a href="service-details.html?id=id-card" class="service-button"
+              >Apply Now</a
+            >
+          </div>
+        </div>
+
+        <!-- Passport Service -->
+        <div class="service-card" id="passport">
+          <div class="service-icon">
+            <i class="fas fa-passport"></i>
+          </div>
+          <div class="service-content">
+            <h2>Passport</h2>
+            <p>Apply for a new passport or renew your existing one.</p>
+            <div class="service-details">
+              <h3>Required Documents:</h3>
+              <ul>
+                <li>Birth Certificate</li>
+                <li>Government ID</li>
+                <li>Passport Photos (2)</li>
+                <li>Proof of Citizenship</li>
+              </ul>
+              <h3>Processing Time:</h3>
+              <p>4-6 weeks</p>
+              <h3>Cost:</h3>
+              <p>$110.00</p>
+            </div>
+            <a href="service-details.html?id=passport" class="service-button"
+              >Apply Now</a
+            >
+          </div>
+        </div>
+
+        <!-- Driver's License Service -->
+        <div class="service-card" id="license">
+          <div class="service-icon">
+            <i class="fas fa-car"></i>
+          </div>
+          <div class="service-content">
+            <h2>Driver's License</h2>
+            <p>Apply for a new driver's license or renew your existing one.</p>
+            <div class="service-details">
+              <h3>Required Documents:</h3>
+              <ul>
+                <li>Government ID</li>
+                <li>Proof of Address</li>
+                <li>Passport Photo</li>
+                <li>Medical Certificate</li>
+              </ul>
+              <h3>Processing Time:</h3>
+              <p>2-3 weeks</p>
+              <h3>Cost:</h3>
+              <p>$50.00</p>
+            </div>
+            <a href="service-details.html?id=license" class="service-button"
+              >Apply Now</a
+            >
+          </div>
+        </div>
+
+        <!-- Tax Filing Service -->
+        <div class="service-card" id="tax-filing">
+          <div class="service-icon">
+            <i class="fas fa-file-invoice-dollar"></i>
+          </div>
+          <div class="service-content">
+            <h2>Tax Filing</h2>
+            <p>
+              File your taxes online quickly and securely with step-by-step
+              guidance.
+            </p>
+            <div class="service-details">
+              <h3>Required Documents:</h3>
+              <ul>
+                <li>W-2 Forms</li>
+                <li>1099 Forms</li>
+                <li>Social Security Number</li>
+                <li>Previous Year's Tax Return</li>
+              </ul>
+              <h3>Processing Time:</h3>
+              <p>2-3 weeks</p>
+              <h3>Cost:</h3>
+              <p>Free</p>
+            </div>
+            <a href="tax-filing.html" class="service-button">File Taxes</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: support@govservices.gov</p>
+          <p>Phone: (555) 123-4567</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Government Services Portal. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/services.js"></script>
+  </body>
+</html>
