@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details - Government Services Portal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/service-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>GovServices</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="service-details-container">
+        <div class="service-header">
+            <div class="service-icon">
+                <i class="fas fa-id-card" id="serviceIcon"></i>
+            </div>
+            <h1 id="serviceTitle">Service Title</h1>
+        </div>
+
+        <div class="application-container">
+            <div class="application-steps">
+                <div class="step active" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Personal Information</h3>
+                        <p>Enter your basic details</p>
+                    </div>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Document Upload</h3>
+                        <p>Upload required documents</p>
+                    </div>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Review & Submit</h3>
+                        <p>Review and submit your application</p>
+                    </div>
+                </div>
+            </div>
+
+            <form id="applicationForm" class="application-form">
+                <!-- Step 1: Personal Information -->
+                <div class="form-step active" data-step="1">
+                    <h2>Personal Information</h2>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+                    <div class="form-navigation">
+                        <button type="button" class="next-step">Next Step</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Document Upload -->
+                <div class="form-step" data-step="2">
+                    <h2>Document Upload</h2>
+                    <div class="form-group">
+                        <label for="idDocument">ID Document</label>
+                        <input type="file" id="idDocument" name="idDocument" required>
+                        <p class="file-help">Upload a clear copy of your ID document</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="proofOfAddress">Proof of Address</label>
+                        <input type="file" id="proofOfAddress" name="proofOfAddress" required>
+                        <p class="file-help">Upload a recent utility bill or bank statement</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Passport Photo</label>
+                        <input type="file" id="photo" name="photo" required>
+                        <p class="file-help">Upload a recent passport-style photo</p>
+                    </div>
+                    <div class="form-navigation">
+                        <button type="button" class="prev-step">Previous Step</button>
+                        <button type="button" class="next-step">Next Step</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Review & Submit -->
+                <div class="form-step" data-step="3">
+                    <h2>Review & Submit</h2>
+                    <div class="review-section">
+                        <h3>Personal Information</h3>
+                        <div id="personalInfoReview"></div>
+                        
+                        <h3>Uploaded Documents</h3>
+                        <div id="documentsReview"></div>
+                        
+                        <div class="terms-checkbox">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I confirm that all information provided is accurate and complete</label>
+                        </div>
+                    </div>
+                    <div class="form-navigation">
+                        <button type="button" class="prev-step">Previous Step</button>
+                        <button type="submit" class="submit-application">Submit Application</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@govservices.gov</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Government Services Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/service-details.js"></script>
+</body>
+</html> 
